@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checklist de Entregas - Motoboys</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: white;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #333;
+            padding-bottom: 15px;
+        }
+        .company-name {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .document-title {
+            font-size: 18px;
+            color: #666;
+        }
+        .date-section {
+            margin-bottom: 30px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .date-line {
+            border-bottom: 1px solid #333;
+            width: 200px;
+            display: inline-block;
+            margin-left: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+        }
+        th, td {
+            border: 1px solid #333;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f0f0f0;
+            font-weight: bold;
+            text-align: center;
+        }
+        .motoboy-col {
+            width: 25%;
+        }
+        .rota-col {
+            width: 25%;
+        }
+        .qtd-col {
+            width: 20%;
+            text-align: center;
+        }
+        .assinatura-col {
+            width: 30%;
+        }
+        .signature-line {
+            height: 40px;
+            border-bottom: 1px solid #999;
+            margin-top: 10px;
+        }
+        .footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #ccc;
+            font-size: 12px;
+            color: #666;
+        }
+        .example-row {
+            background-color: #f9f9f9;
+            font-style: italic;
+            color: #666;
+        }
+        @media print {
+            body {
+                margin: 15px;
+            }
+            .no-print {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="company-name">CALÇADOS 24H</div>
+        <div class="document-title">CHECKLIST DE ENTREGAS - CONTROLE DIÁRIO</div>
+    </div>
+
+    <div class="date-section">
+        Data: <span class="date-line"></span>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th class="motoboy-col">MOTOBOY</th>
+                <th class="rota-col">ROTA / TURNO</th>
+                <th class="qtd-col">QTD ENTREGAS</th>
+                <th class="assinatura-col">ASSINATURA</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="example-row">
+                <td>Mona</td>
+                <td>Rota 1 - Manhã</td>
+                <td style="text-align: center;">7</td>
+                <td><em>(exemplo)</em></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><div class="signature-line"></div></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><div class="signature-line"></div></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><div class="signature-line"></div></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><div class="signature-line"></div></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><div class="signature-line"></div></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><div class="signature-line"></div></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><div class="signature-line"></div></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><div class="signature-line"></div></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><div class="signature-line"></div></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><div class="signature-line"></div></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="footer">
+        <strong>Instruções:</strong><br>
+        • Preencher com letra legível<br>
+        • Motoboy deve assinar ao entregar a prestação de contas<br>
+        • Conferir quantidade de entregas antes da assinatura<br>
+        • Arquivo diário para controle interno
+    </div>
+
+    <div class="no-print" style="margin-top: 30px; text-align: center; color: #666;">
+        <button onclick="window.print()" style="padding: 10px 20px; font-size: 16px; background-color: #007bff; color: white; border: none; border-radius: 5px; cursor: pointer;">
+            🖨️ Imprimir Checklist
+        </button>
+    </div>
+</body>
+</html>
