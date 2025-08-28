@@ -7,44 +7,41 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 20px;
+            margin: 10px;
             background-color: white;
+            font-size: 13px;
         }
         .header {
             text-align: center;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
             border-bottom: 2px solid #333;
-            padding-bottom: 15px;
+            padding-bottom: 10px;
         }
-        .company-name {
-            font-size: 24px;
+        .logo-container {
+            font-size: 28px;
             font-weight: bold;
             margin-bottom: 5px;
         }
+        .logo-calcados {
+            color: #000;
+        }
+        .logo-24h {
+            color: #e60012;
+        }
         .document-title {
-            font-size: 18px;
-            color: #666;
-        }
-        .date-section {
-            margin-bottom: 30px;
             font-size: 16px;
-            font-weight: bold;
-        }
-        .date-line {
-            border-bottom: 1px solid #333;
-            width: 200px;
-            display: inline-block;
-            margin-left: 10px;
+            color: #666;
         }
         table {
             width: 100%;
             border-collapse: collapse;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
         }
         th, td {
             border: 1px solid #333;
-            padding: 12px;
+            padding: 8px;
             text-align: left;
+            font-size: 12px;
         }
         th {
             background-color: #f0f0f0;
@@ -69,15 +66,15 @@
             width: 25%;
         }
         .signature-line {
-            height: 40px;
+            height: 25px;
             border-bottom: 1px solid #999;
-            margin-top: 10px;
+            margin-top: 5px;
         }
         .footer {
-            margin-top: 40px;
-            padding-top: 20px;
+            margin-top: 15px;
+            padding-top: 10px;
             border-top: 1px solid #ccc;
-            font-size: 12px;
+            font-size: 10px;
             color: #666;
         }
         .example-row {
@@ -87,17 +84,28 @@
         }
         @media print {
             body {
-                margin: 15px;
+                margin: 10px;
+                font-size: 12px;
             }
             .no-print {
                 display: none;
+            }
+            table {
+                margin-bottom: 15px;
+            }
+            .footer {
+                margin-top: 10px;
+                page-break-inside: avoid;
             }
         }
     </style>
 </head>
 <body>
     <div class="header">
-        <div class="company-name">CALÇADOS 24H</div>
+        <div class="logo-container">
+            <span class="logo-calcados">Calçados</span>
+            <span class="logo-24h">24h</span>
+        </div>
         <div class="document-title">CHECKLIST DE ENTREGAS - CONTROLE DIÁRIO</div>
     </div>
 
